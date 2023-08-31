@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolinha</title>
+
+</head>
+
+
+<style>
+body{
+   background-color: rgb(247, 191, 239);
+    }
+    .caixa{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        height: 60vh;
+        width: 80vh;
+        margin-left: 5vh;
+        margin-top: 4vh;
+        padding: 9vh;
+        background-color: rgb(247, 142, 221);
+        border-radius: 2vh;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+.animacao_p{
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+.forma{
+    height: 30vh;
+    width:30vh;
+    background-color: rgb(247, 244, 245);
+    border-radius: 90vh;
+ 
+    margin-left: 10vh;
+    margin-right: 2vh;
+}
+#cx1{
+    margin-left: 1vh;
+    
+}
+#cx1 p{
+    font-size: 10vh;
+    margin-left: 2vh;
+    color: rgb(248, 7, 156);
+}
+#cx2 p{
+    font-size: 10vh;
+    margin-left: 3vh;
+    color: rgb(248, 7, 156);
+}
+
+
+.andar1{
+    animation-name: andar1;
+
+}
+
+@keyframes andar1{
+    from{
+       opacity: 0.0;
+
+    
+    }
+    to{
+        margin-top: 29vh;
+        background-color: rgb(0, 0, 0);
+        border-radius: 0vh;
+        opacity: 0.;
+        
+       
+
+    }
+}
+
+</style>
+
+
+<body>
+
+    <div class="caixa">
+        <div id="cx1" class="forma animacao_p andar1">
+            <p>Titulo</p> 
+        </div>
+        <div id="cx2" class="forma animacao_p andar1">
+            <p>Titulo</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
