@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.Background-mario{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bannermario{
+    width: 100%;
+    height: 25vh;
+}
+.container-base{
+    display: flex;
+    flex-direction: column;
+}
+
+#caixa01{
+  background-color: rgb(243, 10, 138);
+  background-image: url(img/mario.jpg);
+  margin-left: 0vh;
+  height: 17vh;
+  width: 14vh;
+  margin-top: 4vh;
+  animation-delay: 0.3s;
+  border-radius: 7vh; 
+}
+#caixa02{
+  background-color: rgb(62, 8, 255);
+  background-image: url(img/bowser.jpg);
+  height: 17vh;
+  width: 16vh;
+  margin-left: 0vh;
+  margin-top: 4vh;
+  animation-delay: 0.1s;
+  border-radius: 7vh; 
+}
+#caixa03{
+  background-color: rgb(250, 253, 252);
+  margin-left: 0vh;
+  background-image: url(img/toad.jpg);
+  height: 17vh;
+  width: 16vh;
+  margin-top: 4vh;
+  animation-delay: 0.5s;
+  border-radius: 7vh; 
+}
+#caixa04{
+  background-color: rgb(250, 253, 252);
+  margin-left: 0vh;
+  background-image: url(img/peach.jpg);
+  height: 17vh;
+  width: 16vh;
+  margin-top: 4vh;
+  animation-delay: 0.2s;
+  border-radius: 7vh; 
+}
+.AnimationMove{
+  animation-name: Andar;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  border-radius: 5vh; 
+   
+}
+.AnimationMove:focus{
+    animation: Andar;
+    background-color: yellowgreen;
+    color: violet;
+    animation-direction: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    
+}
+@keyframes Andar{
+    from{margin-left: 0vh;}
+    to {margin-left:100%;
+    border-radius: 5vh;    
+    
+    }
+}
+</style>
+
+<body>
+
+<img src="img/bannermario.jfif" class="bannermario">
+<div class="Background-mario">
+
+<div class="container-base"></div>
+<input id="caixa01" class="AnimationMove">
+<input id="caixa02" class="AnimationMove">
+<input id="caixa03" class="AnimationMove">
+<input id="caixa04" class="AnimationMove">
+</div>
+    
+</body>
+</html>
